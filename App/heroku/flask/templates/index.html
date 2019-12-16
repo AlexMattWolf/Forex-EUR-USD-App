@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Forex Millionaire Maker</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/assets/vendors/iconfonts/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="static/assets/vendors/iconfonts/typicons/src/font/typicons.css">
+    <link rel="stylesheet" href="static/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="static/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="static/assets/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="static/assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/assets/css/forex_app/style.css">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="static/assets/images/favicon.png" />
+  </head>
+    <body>
+      <div class="container-scroller">
+
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+          <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center" style="background-color: black">
+            <a class="navbar-brand brand-logo" href="index.html">
+              <img src="static/assets/images/logo2.png" alt="logo" /> </a>
+            <a class="navbar-brand brand-logo-mini" href="index.html">
+              <img src="static/assets/images/logo-mini.svg" alt="logo" /> </a>
+          </div>
+          <div class="navbar-menu-wrapper d-flex align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown language-dropdown">
+                <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <div class="d-inline-flex mr-0 mr-md-3">
+                    <div class="flag-icon-holder">
+                      <i class="flag-icon flag-icon-us"></i>
+                    </div>
+                  </div>
+                  <span class="profile-text font-weight-medium d-none d-md-block">English</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
+                  <a class="dropdown-item">
+                    <div class="flag-icon-holder">
+                      <i class="flag-icon flag-icon-us"></i>
+                    </div>English
+                  </a>
+                  <a class="dropdown-item">
+                    <div class="flag-icon-holder">
+                      <i class="flag-icon flag-icon-fr"></i>
+                    </div>French
+                  </a>
+                  <a class="dropdown-item">
+                    <div class="flag-icon-holder">
+                      <i class="flag-icon flag-icon-ae"></i>
+                    </div>Arabic
+                  </a>
+                  <a class="dropdown-item">
+                    <div class="flag-icon-holder">
+                      <i class="flag-icon flag-icon-ru"></i>
+                    </div>Russian
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <i class="mdi mdi-bell-outline"></i>
+                  <span class="count">1</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                  <a class="dropdown-item py-3">
+                    <p class="mb-0 font-weight-medium float-left">You have 1 unread message </p>
+                    <span class="badge badge-pill badge-primary float-right">View all</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <img src="static/assets/images/Devang.png" alt="image" class="img-sm profile-pic"> </div>
+                    <div class="preview-item-content flex-grow py-2">
+                      <p class="preview-subject ellipsis font-weight-medium text-dark">Devang Ghandi </p>
+                      <p class="font-weight-light small-text"> Absolutely astonishing. . . A+ </p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+                <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <img class="img-xs rounded-circle" src="static/assets/images/Devang.png" alt="Profile image"> </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                  <div class="dropdown-header text-center">
+                    <img class="img-md rounded-circle" src="static/assets/images/Devang.png" alt="Profile image">
+                    <p class="mb-1 mt-3 font-weight-semibold">Devang Ghandi</p>
+                    <p class="font-weight-light text-muted mb-0">DGhanOnVacation@AOL.com</p>
+                  </div>
+                  <a class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+                  <a class="dropdown-item">Messages<i class="dropdown-item-icon ti-comment-alt"></i></a>
+                  <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
+                  <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
+                  <a class="dropdown-item">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-menu"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+
+        <div class="container-fluid page-body-wrapper">
+
+          <!-- partial:partials/_sidebar.html -->
+          <nav class="sidebar sidebar-offcanvas" id="sidebar">
+
+            <!-- style="background-color: black">  style="background-color: black" -->
+            <ul class="nav">
+              <li class="nav-item nav-profile">
+                <a href="#" class="nav-link">
+                  <div class="profile-image">
+                    <img class="img-xs rounded-circle" src="static/assets/images/Devang.png" alt="profile image">
+                    <div class="dot-indicator bg-success"></div>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="profile-name">Devang Ghandi</p>
+                    <p class="designation">Premium user</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item nav-category">Main Menu</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="menu-icon typcn typcn-document-text"></i>
+                  <span class="menu-title">Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+  <!--              <a class="nav-link" href="#"> &lt;!&ndash; TODO - change html page reference&ndash;&gt;-->
+                  <a class="nav-link" href="/interactive">
+                  <i class="menu-icon typcn typcn-bell"></i>
+                  <span class="menu-title">Interactive</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="summary"> <!-- TODO - change html page reference-->
+                  <i class="menu-icon typcn typcn-user-outline"></i>
+                  <span class="menu-title">App Summary</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- partial -->
+
+          <div class="main-panel">
+            <div class="content-wrapper">
+
+              <!-- Page Title Header Starts-->
+              <div class="row page-title-header">
+                <div class="col-12">
+                  <div class="page-header">
+                    <h4 class="page-title">Welcome Back, Devang!</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Page Title Header Ends-->
+
+              <!--First Row Start-->
+              <div class="row">
+
+                <!--Profits/Loss Over Time Overview Start-->
+                <div class="col-md-8 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title mb-0">Profits/Loss Over Time Overview</h4>
+                      <div class="d-flex flex-column flex-lg-row">
+                        <p>Breakdown by minutes 0 through 59</p>
+                        <!-- <ul class="nav nav-tabs sales-mini-tabs ml-lg-auto mb-4 mb-md-0" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="sales-statistics_switch_1" data-toggle="tab" role="tab" aria-selected="true">1D</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="sales-statistics_switch_2" data-toggle="tab" role="tab" aria-selected="false">5D</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="sales-statistics_switch_3" data-toggle="tab" role="tab" aria-selected="false">1M</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="sales-statistics_switch_4" data-toggle="tab" role="tab" aria-selected="false">1Y</a>
+                          </li>
+                        </ul> -->
+                      </div>
+                      <div class="d-flex flex-column flex-lg-row">
+                        <div class="data-wrapper d-flex mt-2 mt-lg-0">
+                          <div class="wrapper">
+                            <h5 class="mb-0">Total Profit</h5>
+                            <div class="d-flex align-items-center">
+                              <h4 class="font-weight-semibold mb-0">$568.50</h4>
+                              <small class="ml-2 text-gray d-none d-lg-block"><b>51.13% Profit</b></small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ml-lg-auto" id="sales-statistics-legend"></div>
+                      </div>
+                      <canvas class="mt-5" height="120" id="sales-statistics-overview"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!--Profits/Loss Over Time Overview End-->
+
+                <!--Net Profit Margin Per Month Start-->
+                <div class="col-md-4 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column">
+                      <div class="wrapper">
+                        <h4 class="card-title mb-0">Net Profit Margin Per Month</h4>
+                        <p>Started collecting data from January 2019</p>
+                        <div class="mb-4" id="net-profit-legend"></div>
+                      </div>
+                      <canvas class="my-auto mx-auto" height="250" id="net-profit"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!--Net Profit Margin Per Month End-->
+
+              </div>
+              <!--First Row End-->
+
+              <div class="row">
+
+                <div class="col-md-8">
+                  <div class="row">
+
+                    <!--Total Transactions Start-->
+                    <div class="col-md-6 grid-margin stretch-card">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="d-flex align-items-center pb-2">
+                                <div class="dot-indicator bg-danger mr-2"></div>
+                                <p class="mb-0">Total Loss</p>
+                              </div>
+                              <h4 class="font-weight-semibold">$431.50</h4>
+                              <div class="progress progress-md">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="78"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                              <div class="d-flex align-items-center pb-2">
+                                <div class="dot-indicator bg-success mr-2"></div>
+                                <p class="mb-0">Total Profit</p>
+                              </div>
+                              <h4 class="font-weight-semibold">$568.50</h4>
+                              <div class="progress progress-md">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 52%" aria-valuenow="52" aria-valuemin="0" aria-valuemax="45"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Total Transactions End-->
+
+                    <!--Average Price Per Unit Start-->
+                    <div class="col-md-6 grid-margin stretch-card average-price-card">
+                      <div class="card text-white">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between pb-2 align-items-center">
+                            <h2 class="font-weight-semibold mb-0">7:00-7:59</h2>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <h5 class="font-weight-semibold mb-0">Most Profitable Hour</h5>
+                            <p class="text-white mb-0">$209.8</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Average Price Per Unit-->
+
+                    <!--Monthly Units Start-->
+                    <div class="col-md-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title mb-0">Daily Overview</h4>
+                          <div class="d-flex align-items-center justify-content-between w-100">
+                            <p class="mb-0">Total profits and losses breakdown by day of the week for the given data.</p>
+                            <div class="dropdown">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dateSorter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Days of Week</button>
+                              <div class="dropdown-menu" aria-labelledby="dateSorter">
+                                <div class="dropdown-item" id="market-overview_1">Daily</div>
+                                <div class="dropdown-item" id="market-overview_2">Weekly</div>
+                                <div class="dropdown-item" id="market-overview_3">Monthly</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-end">
+                            <h3 class="mb-0 font-weight-semibold">$568.50</h3>
+                            <p class="mb-0 font-weight-medium mr-2 ml-2 mb-1">USD</p>
+                            <p class="mb-0 text-success font-weight-semibold mb-1">(+1.13%)</p>
+                          </div>
+                          <canvas class="mt-4" height="100" id="market-overview-chart"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Monthly Units End-->
+
+                    <!--Transactions Start-->
+                    <div class="col-md-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <h4 class="card-title mb-0">Transactions</h4>
+                            <a href="#"><small>Show All</small></a>
+                          </div>
+                          <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                              <thead>
+                                <tr>
+                                  <th>Transaction ID</th>
+                                  <th>Currency Pair</th>
+                                  <th>Status</th>
+                                  <th>Date</th>
+                                  <th>Amount</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>87239</td>
+                                  <td>EUR/USD</td>
+                                  <td>Completed</td>
+                                  <td>20 Jan 2019</td>
+                                  <td>$755</td>
+                                </tr>
+                                <tr>
+                                  <td>64537</td>
+                                  <td>EUR/USD</td>
+                                  <td>Completed</td>
+                                  <td>23 Feb 2019</td>
+                                  <td>$800</td>
+                                </tr>
+                                <tr>
+                                  <td>14259</td>
+                                  <td>USD/EUR</td>
+                                  <td>Completed</td>
+                                  <td>25 Mar 2019</td>
+                                  <td>$463</td>
+                                </tr>
+                                <tr>
+                                  <td>91935</td>
+                                  <td>USD/EUR</td>
+                                  <td>Completed</td>
+                                  <td>27 Mar 2019</td>
+                                  <td>$235</td>
+                                </tr>
+                                <tr>
+                                  <td>47238</td>
+                                  <td>EUR/USD</td>
+                                  <td>Completed</td>
+                                  <td>1 Apr 2019</td>
+                                  <td>$657</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Transactions End-->
+
+                  </div>
+                </div>
+
+
+                <div class="col-md-4">
+                  <div class="row">
+
+                    <!--World Map Start-->
+                    <div class="col-md-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title mb-4">Top 3 Currency Pairs</h4>
+                          <div id="dashboard-vmap" class="vector-map"></div>
+                          <div class="wrapper">
+                            <div class="d-flex w-100 pt-2 mt-4">
+                              <p class="mb-0 font-weight-semibold">EURUSD</p>
+                              <div class="wrapper ml-auto d-flex align-items-center">
+                                <p class="ml-1 mb-0">24.0%</p>
+                              </div>
+                            </div>
+                            <div class="d-flex w-100 pt-2">
+                              <p class="mb-0 font-weight-semibold">USDJPY</p>
+                              <div class="wrapper ml-auto d-flex align-items-center">
+                                <p class="ml-1 mb-0">13.2%</p>
+                              </div>
+                            </div>
+                            <div class="d-flex w-100 pt-2">
+                              <p class="mb-0 font-weight-semibold">GBPUSD</p>
+                              <div class="wrapper ml-auto d-flex align-items-center">
+                                <p class="ml-1 mb-0">9.6%</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--World Map End-->
+
+                    <!--Market Watchlist Start-->
+                    <div class="col-md-12 grid-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title mb-0">Most Recently Used Traders</h4>
+                      <div class="table-responsive">
+                        <table class="table table-stretched">
+                          <thead>
+                            <tr>
+                              <th>Symbol</th>
+                              <th>Last Price</th>
+                              <th>Profit</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <p class="mb-1 text-dark font-weight-medium">Citi</p><small class="font-weight-medium">Citigroup, Inc.</small>
+                              </td>
+                              <td class="font-weight-medium">$250.00</td>
+                              <td class="text-success font-weight-medium">+12.64</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="mb-1 text-dark font-weight-medium">JP Morgan</p><small class="font-weight-medium">JPMorgan Chase & Co.</small>
+                              </td>
+                              <td class="font-weight-medium">$458.00</td>
+                              <td class="text-danger font-weight-medium">-14.53</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="mb-1 text-dark font-weight-medium">UBS</p><small class="font-weight-medium">UBS Group AG</small>
+                              </td>
+                              <td class="font-weight-medium">$250.00</td>
+                              <td class="text-danger font-weight-medium">+12.64</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="mb-1 text-dark font-weight-medium">Deutsche Bank</p><small class="font-weight-medium">Deutsche Bank AG</small>
+                              </td>
+                              <td class="font-weight-medium">$546.00</td>
+                              <td class="text-success font-weight-medium">+24.34</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <a class="d-block mt-3" href="#">Show all</a>
+                    </div>
+                  </div>
+                </div>
+                    <!--Market Watchlist End-->
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- content-wrapper ends -->
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+      <!-- plugins:js -->
+      <script src="static/assets/vendors/js/vendor.bundle.base.js"></script>
+      <script src="static/assets/vendors/js/vendor.bundle.addons.js"></script>
+      <!-- endinject -->
+      <!-- Plugin js for this page-->
+      <!-- End plugin js for this page-->
+      <!-- inject:js -->
+      <script src="static/assets/js/shared/off-canvas.js"></script>
+      <script src="static/assets/js/shared/misc.js"></script>
+      <!-- endinject -->
+      <!-- Custom js for this page-->
+      <script src="static/assets/js/forex_app/dashboard.js"></script>
+      <!-- End custom js for this page-->
+    </body>
+</html>
