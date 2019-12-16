@@ -1,0 +1,1 @@
+FLASK_APP=forex_app/app.py flask run
