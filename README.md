@@ -1,5 +1,4 @@
 # Forex EUR-USD App
-This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
 
 ## Project Objectives
 This project was a team effort to build and deploy an application analyzing foreign exchange (_"forex"_) rates against the U.S. Dollar, focusing on the Euro (**€**) to U.S. Dollar (**$**) market. Using Machine Learning, 2018 EUR-USD data, and financial/economic new sentiment analysis, we created and trained varying models to achieve an system that would be capable of trading and profiting in this market. The goal of this model would be to implement a high frequency trading technique, taking long and short positions over a span of ten minutes. As these trades would occur, their outcomes would be subsequentially logged in the front-end site for users to view how the model can be profitable.
