@@ -14,6 +14,7 @@ The purpose of this project is ________. (Describe the main goals of the project
     * Neural Networks
     * Deep Learning
 * Data Visualization
+* News Sentiment Analysis
 
 ### Technologies
 * Python 
@@ -23,6 +24,7 @@ The purpose of this project is ________. (Describe the main goals of the project
     * Scikit
     * Pandas
     * NumPy
+    * API Interactions
 * Heroku
     * Python
     * Flask
@@ -61,20 +63,13 @@ The purpose of this project is ________. (Describe the main goals of the project
 5. Follow setup [instructions](Link to file)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+* [Heroku App](link)
 
-
-## Contributing DSWG Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
+## Contributing Members
 
 |Name     | GitHub Profile |
 |---------|----------------|
-| Lawrence Ferreti | https://github.com/lferretti |
+| Lawrence Ferretti | https://github.com/lferretti |
 | Julian Freeman | https://github.com/jofreeman1014 |
 | Chris Holt | https://github.com/chrisholt0222 |
 | Jack Lindsay | https://github.com/Trippl7777 |
