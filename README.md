@@ -14,6 +14,7 @@ This project was a team effort to build and deploy an application analyzing fore
     * Random Forrest
     * Neural Networks
     * Deep Learning
+    * K-Means
 * Data Visualization
 
 ### Technologies
@@ -44,7 +45,7 @@ This project was a team effort to build and deploy an application analyzing fore
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
-The EUR-USD forex market data for 2018 and 2019 was gathered from [HistData.com](https://www.histdata.com/download-free-forex-data/) as the data could be downloaded in CSV format on a minute-by-minute basis. After doing so, the data was cleaned and re-formatted into a homogenized layout for easy interchangeable loading into the models. A small inconvenience occurred when as the 2019 data was not posted as one CSV file, but multiple files due to only being 3/4 through the year. This required an extra step of concatenating the multiple files but was also completed. 
+The EUR-USD forex market data for 2018 and 2019 was gathered from [HistData.com](https://www.histdata.com/download-free-forex-data/) as the data could be downloaded in CSV format on a minute-by-minute basis. After doing so, the data was cleaned and re-formatted into a homogenized layout for easy interchangeable loading into the models. A small inconvenience occurred when as the 2019 data was not posted as one CSV file, but multiple files due to only being 3/4 through the year. This required an extra step of concatenating the multiple files but was also completed. This data was also coupled with interest rate data from the European Central Bank and Ferderal Reserve Bank to analyze its potential affect on the outcomes of the models.
 
 The sentiment analysis data was pulled from [New York Time Developers](https://developer.nytimes.com/) using API interactions to pull article abstracts for daily news. The topics pulled using this API include finance, business, and political, and would be sorted into subject specific categories: finance, politics, and federal reserve bank. This news would be analyzed utilizing a Python Library, Natural Language Toolkit, to give each article abstract a score: negative, neutral, positive, and compound. These scores would be based on the sentiment of the words inside the article. This data would be used inside the models to determine if news had any effect on exchange rates between currencies. 
 
@@ -62,6 +63,25 @@ After the frontend was completed, the site was first tested using flask locally 
 - ETL Processing
 - Machine Learning Modeling
 - Advanced Data Analysis
+
+## File Descriptions
+
+
+
+* Analysis
+    * ML Modeling contains the Jupyter files for the Machine Learning models and their respective CSV inputs and outputs. Monthly interest file is also a part of these inputs. 
+    * Sentiment Analysis file contains the Jupyter File and Resulting CSV from NY times news analysis.
+* App 
+    * Forex_app files contains the frontend structure for the deployed site.
+        * Data contains the data file used to demonstrate a _Live Feed_ in the application.
+        * Templates contains the pages of the website that are referenced to each other through flask and HTML links.
+        * Static contains the assets of the webpages: JavaScript, Images, CSS, etc.
+* Data
+    * Contains the bulk of the orginal data, and some of the data cleaning Jupyter files. 
+
+Raw Data: Contains data in its original downloaded form or unpacked but still unatlered. 
+Manipulated: Contains post-ETL data, cleaned and re-formmatted, or altered as an output from modeling.
+
 
 ## Lauching The App Locally
 
