@@ -2,7 +2,7 @@
 This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
 
 ## Project Objectives
-This project was a team effort to build and deploy an application analyzing foreign exhange (_"forex"_) rates against the U.S. Dollar, focusing on the Euro (**€**) to U.S. Dollar (**$**) market. Using Machine Learning, 2018 EUR-USD data, and financial/economic new sentiment analysis, we created and trained varying models to acheive an system that would be capable of trading and profiting in this market. The goal of this model would be to implement a high-frequency trading technique, taking long and short positions over a span of ten minutes. As these trades would occur, their outcomes would be subsquentially logged in the front-end site for users to view how the model can be profitable.
+This project was a team effort to build and deploy an application analyzing foreign exchange (_"forex"_) rates against the U.S. Dollar, focusing on the Euro (**€**) to U.S. Dollar (**$**) market. Using Machine Learning, 2018 EUR-USD data, and financial/economic new sentiment analysis, we created and trained varying models to achieve an system that would be capable of trading and profiting in this market. The goal of this model would be to implement a high frequency trading technique, taking long and short positions over a span of ten minutes. As these trades would occur, their outcomes would be subsequentially logged in the front-end site for users to view how the model can be profitable.
 
 #### Project Status: Complete
 
@@ -10,6 +10,7 @@ This project was a team effort to build and deploy an application analyzing fore
 * ETL
 * Application Deployment
 * Financial & Economic News Sentiment Analysis
+* Predictive Modeling
 * Machine Learning
     * Random Forrest
     * Neural Networks
@@ -24,41 +25,54 @@ This project was a team effort to build and deploy an application analyzing fore
     * Scikit
     * Pandas
     * NumPy
+    * Time
+    * Requests
+    * Natural Language Toolkit
     * API Interactions
+    * Matplotlib
 * Heroku
     * Python
     * Flask
-* Javascript
+* JavaScript
     * Flask
     * Plot.ly
     * D3
 * HTML
     * Bootstrap
     * CSS
+* Excel
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
+The EUR-USD forex market data for 2018 and 2019 was gathered from [HistData.com](https://www.histdata.com/download-free-forex-data/) as the data could be downloaded in CSV format on a minute-by-minute basis. After doing so, the data was cleaned and re-formatted into a homogenized layout for easy interchangeable loading into the models. A small inconvenience occurred when as the 2019 data was not posted as one CSV file, but multiple files due to only being 3/4 through the year. This required an extra step of concatenating the multiple files but was also completed. 
+
+The sentiment analysis data was pulled from [New York Time Developers](https://developer.nytimes.com/) using API interactions to pull article abstracts for daily news. The topics pulled using this API include finance, business, and political, and would be sorted into subject specific categories: finance, politics, and federal reserve bank. This news would be analyzed utilizing a Python Library, Natural Language Toolkit, to give each article abstract a score: negative, neutral, positive, and compound. These scores would be based on the sentiment of the words inside the article. This data would be used inside the models to determine if news had any effect on exchange rates between currencies. 
+
+With the data ready, many Machine Learning models were created, trained, and tested using the tools listed under technologies. The models would analyze 20 to 60 points of moving averages to determine various predictive patterns for the next ten minutes of the forex data. The sentiment analysis was disregarded during this process as it was ineffectual on the models' results and even diminishing of model accuracy. A final model, Neural Networks, was chosen as it was able to achieve the highest accuracy, 60% to 70%, and for demonstration purposes, December 2018 was chosen as it had the highest number of results per month. An issue arose from deciding how this would be implemented in the frontend, but was decided for presentation purposes an excel file would be more reliable and easier to implement.
+
+In the frontend development, the team resourced a template to use for the wire-frame of the site (License to use this template owned by [Lawrence Ferretti](https://github.com/lferretti)). This template was then modified to our needs, preferences, and custom-built pages in HTML.
+
+The interactive page implemented the bulk of the JavaScript coding as it shows how the model would interact with Live Data if this data was being pulled directly from the forex market on a minute-by-minute basis. This faced some issues as to making historical data appear as if it was live data, and complicated app deployment as the historical data needed to be loaded through Python Flask.
+
+After the frontend was completed, the site was first tested using flask locally and then deployed via [Heroku]().
+
 ## Project Requirements
 
-- Frontend Deveolment
+- Frontend Development
 - ETL Processing
 - Machine Learning Modeling
 - Advanced Data Analysis
 
-## Getting Started
+## Lauching The App Locally
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+1. Clone This Repo To A Local File
 
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+2. Under the App Folder, use command line (or alternative) to either run the shell script _run_ : sh run.sh
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
+    * Alternative: Using GitBash, under the App/forex_app folder, launch the app.py: python app.py
 
-5. Follow setup [instructions](Link to file)
+3. Next, in your preferred web browser type _127.0.0.1:5000_ into the URL.
 
 ## Featured Notebooks/Analysis/Deliverables
 * [Heroku App](link)
