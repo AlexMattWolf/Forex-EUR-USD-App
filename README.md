@@ -1,10 +1,10 @@
 # Forex EUR-USD App
 This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
 
-#### -- Project Status: Complete
+## Project Objectives
+This project was a team effort to build and deploy an application analyzing foreign exhange (_"forex"_) rates against the U.S. dollar, focusing on the Euro-USD market. Using Machine Learning, 2018 EUR-USD data, and financial/economic new sentiment analysis, we created and trained varying models to acheive an system that would be capable of trading and profiting in this market. The goal of this model would be to implement a high-frequency trading technique, taking long and short positions over a span of ten minutes. As these trades would occur, their outcomes would be subsquentially logged in the front-end site for users to view how the model can be profitable.
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+#### -- Project Status: Complete
 
 ### Methods & Technologies
 * ETL
@@ -39,14 +39,12 @@ The purpose of this project is ________. (Describe the main goals of the project
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
-## Needs of this project
+## Project Requirements
 
-- frontend developers
-- data exploration/descriptive statistics
-- data processing/cleaning
-- statistical modeling
-- writeup/reporting
-- etc. (be as specific as possible)
+- Frontend Deveolment
+- ETL Processing
+- Machine Learning Modeling
+- Advanced Data Analysis
 
 ## Getting Started
 
