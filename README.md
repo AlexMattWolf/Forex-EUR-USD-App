@@ -1,7 +1,7 @@
 # Forex EUR-USD App
 
 ## Project Objectives
-This project was a team effort to build and deploy an application analyzing foreign exchange (_"forex"_) rates against the U.S. Dollar, focusing on the Euro (**€**) to U.S. Dollar (**$**) market. Using Machine Learning, 2018 EUR-USD data, and financial/economic new sentiment analysis, we created and trained varying models to achieve an system that would be capable of trading and profiting in this market. The goal of this model would be to implement a high frequency trading technique, taking long and short positions over a span of ten minutes. As these trades would occur, their outcomes would be subsequentially logged in the front-end site for users to view how the model can be profitable.
+This project was a team effort to build and deploy an application analyzing foreign exchange (_"forex"_) rates against the U.S. Dollar, focusing on the Euro (**€**) to U.S. Dollar (**$**) market. This analysis would incorporate Machine Learning techniques, 2018 & 2019 EUR-USD forex data, and financial/political news sentiment analyses. Utilizing these, we would then a create and train varying models that would achieve accuracies capable of being profitable. The goal of these models would be to implement a high frequency trading strategies, taking long and short positions over a span of ten minutes.
 
 #### Project Status: Complete
 
