@@ -54,7 +54,7 @@ In the frontend development, the team resourced a template to use for the wire-f
 
 The interactive page implemented the bulk of the JavaScript coding as it shows how the model would interact with Live Data if this data was being pulled directly from the forex market on a minute-by-minute basis. This faced some issues as to making historical data appear as if it was live data, and complicated app deployment as the historical data needed to be loaded through Python Flask.
 
-After the frontend was completed, the site was first tested using flask locally and then deployed via [Heroku]().
+After the frontend was completed, the site was first tested using flask locally and then deployed via [Heroku](https://millionairemaker.herokuapp.com/).
 
 ## Project Requirements
 
@@ -73,8 +73,8 @@ After the frontend was completed, the site was first tested using flask locally 
 
 3. Next, in your preferred web browser type _127.0.0.1:5000_ into the URL.
 
-## Featured Notebooks/Analysis/Deliverables
-* [Heroku App](link)
+## Featured App
+* [Heroku App](https://millionairemaker.herokuapp.com/)
 
 ## Contributing Members
 
